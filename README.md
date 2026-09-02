@@ -1,6 +1,6 @@
 # Yeast Morphology ML
 
-A from-scratch Python rebuild of one piece of Khanh Mai Nguyen's Ph.D. dissertation,
+A from-scratch Python rebuild of one piece of Khanh Mai Nguyen's (Iris Johnson) Ph.D. dissertation,
 *Microorganisms in Extreme Environmental Conditions* (Physics/Biophysics, University
 of Arkansas, 2023): classifying budding vs. non-budding *S. cerevisiae* cells from
 phase-contrast microscopy images.
