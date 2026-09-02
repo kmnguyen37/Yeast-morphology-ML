@@ -1,0 +1,35 @@
+loading data...
+train (827, 1, 48, 48), val (166, 1, 48, 48), test (197, 1, 48, 48)
+aux feature means (train): {'area': np.float64(2257.21), 'eccentricity': np.float64(0.7), 'solidity': np.float64(0.95), 'extent': np.float64(0.68), 'aspect_ratio': np.float64(1.57), 'n_defects': np.float64(2.66), 'max_defect_depth_ratio': np.float64(0.38)}
+epoch   1  train loss 0.3567 acc 0.903  |  val loss 0.3928 acc 0.861 f1 0.816  (16s)
+epoch   2  train loss 0.2409 acc 0.903  |  val loss 0.3039 acc 0.873 f1 0.832  (20s)
+epoch   3  train loss 0.2059 acc 0.926  |  val loss 0.2863 acc 0.873 f1 0.832  (24s)
+epoch   4  train loss 0.1865 acc 0.926  |  val loss 0.2742 acc 0.873 f1 0.832  (27s)
+epoch   5  train loss 0.2035 acc 0.921  |  val loss 0.3181 acc 0.880 f1 0.831  (32s)
+epoch   6  train loss 0.1689 acc 0.936  |  val loss 0.2664 acc 0.873 f1 0.829  (35s)
+epoch   7  train loss 0.1668 acc 0.937  |  val loss 0.2626 acc 0.886 f1 0.843  (40s)
+epoch   8  train loss 0.1530 acc 0.948  |  val loss 0.2321 acc 0.886 f1 0.846  (44s)
+epoch   9  train loss 0.1479 acc 0.947  |  val loss 0.2187 acc 0.898 f1 0.864  (118s)
+epoch  10  train loss 0.1547 acc 0.949  |  val loss 0.2009 acc 0.928 f1 0.909  (145s)
+epoch  11  train loss 0.1532 acc 0.950  |  val loss 0.2045 acc 0.922 f1 0.901  (150s)
+epoch  12  train loss 0.1415 acc 0.952  |  val loss 0.2008 acc 0.922 f1 0.899  (154s)
+epoch  13  train loss 0.1517 acc 0.937  |  val loss 0.2637 acc 0.886 f1 0.843  (157s)
+epoch  14  train loss 0.1339 acc 0.947  |  val loss 0.2177 acc 0.904 f1 0.869  (161s)
+epoch  15  train loss 0.1276 acc 0.956  |  val loss 0.1905 acc 0.916 f1 0.889  (164s)
+epoch  16  train loss 0.1249 acc 0.955  |  val loss 0.1673 acc 0.928 f1 0.906  (168s)
+epoch  17  train loss 0.1262 acc 0.944  |  val loss 0.2090 acc 0.904 f1 0.871  (171s)
+epoch  18  train loss 0.1271 acc 0.956  |  val loss 0.1932 acc 0.928 f1 0.906  (176s)
+epoch  19  train loss 0.1212 acc 0.954  |  val loss 0.2075 acc 0.910 f1 0.880  (180s)
+epoch  20  train loss 0.1196 acc 0.956  |  val loss 0.1851 acc 0.940 f1 0.923  (183s)
+epoch  21  train loss 0.1211 acc 0.954  |  val loss 0.2022 acc 0.916 f1 0.887  (186s)
+epoch  22  train loss 0.1286 acc 0.955  |  val loss 0.2076 acc 0.916 f1 0.887  (189s)
+epoch  23  train loss 0.1124 acc 0.956  |  val loss 0.1852 acc 0.922 f1 0.898  (193s)
+epoch  24  train loss 0.1120 acc 0.959  |  val loss 0.1944 acc 0.922 f1 0.896  (196s)
+early stopping at epoch 24 (no val improvement for 8 epochs)
+
+restored best-val-loss weights (val loss 0.1673)
+
+=== TEST SET (held out, never seen in training) ===
+loss 0.1182  acc 0.944  precision 0.935  recall 0.923  f1 0.929
+saved weights to /home/claude/yeast-morphology-ml/data/cnn_hybrid_weights.npz
+saved test predictions to /home/claude/yeast-morphology-ml/data/cnn_hybrid_test_predictions.csv

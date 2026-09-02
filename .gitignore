@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# OS cruft
+.DS_Store
+
+# raw source frames -- unpublished original research data, not this project's
+# code; scripts/build_dataset.py regenerates data/generated_dataset/ from these
+data/sample/
+
+# scratch / sync artifacts
+_to_delete/
+*.zip

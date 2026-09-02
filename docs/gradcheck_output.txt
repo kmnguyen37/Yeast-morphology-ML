@@ -1,0 +1,33 @@
+=== per-layer gradient checks (small random inputs) ===
+Conv2D(3->4,k3)      d/dx   max rel error: 1.60e-09  OK
+Conv2D(3->4,k3)      d/dW   max rel error: 5.90e-11  OK
+Conv2D(3->4,k3)      d/db   max rel error: 1.32e-11  OK
+MaxPool2D            d/dx   max rel error: 5.83e-09  OK
+Dense(10->4)         d/dx   max rel error: 6.76e-11  OK
+Dense(10->4)         d/dW   max rel error: 9.36e-11  OK
+Dense(10->4)         d/db   max rel error: 7.33e-12  OK
+ReLU                 d/dx   max rel error: 3.17e-11  OK
+
+=== BCE-with-logits gradient check ===
+bce_with_logits      d/dlogits max rel error: 1.97e-10  OK
+
+=== end-to-end YeastCNN gradient check (tiny 12x12 input) ===
+conv1.W            (sampled) max rel error: 3.96e-10  OK
+conv1.b            (sampled) max rel error: 1.04e-10  OK
+conv2.W            (sampled) max rel error: 1.47e-10  OK
+conv2.b            (sampled) max rel error: 1.90e-11  OK
+fc1.W            (sampled) max rel error: 2.18e-12  OK
+fc1.b            (sampled) max rel error: 1.87e-11  OK
+fc2.W            (sampled) max rel error: 1.51e-09  OK
+fc2.b            (sampled) max rel error: 2.90e-11  OK
+
+=== end-to-end HybridYeastCNN gradient check (tiny 12x12 input + aux) ===
+conv1.W            (sampled) max rel error: 1.60e-09  OK
+conv1.b            (sampled) max rel error: 1.65e-10  OK
+conv2.W            (sampled) max rel error: 9.62e-11  OK
+conv2.b            (sampled) max rel error: 2.85e-11  OK
+fc1.W            (sampled) max rel error: 2.04e-10  OK
+fc1.b            (sampled) max rel error: 1.54e-11  OK
+fc2.W            (sampled) max rel error: 8.76e-10  OK
+fc2.b            (sampled) max rel error: 2.92e-11  OK
+aux-feature finite-diff gradient nonzero: 8.98e-02 (sanity: aux inputs DO affect the loss)
